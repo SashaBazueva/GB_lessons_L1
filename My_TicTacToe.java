@@ -102,19 +102,10 @@ public class My_TicTacToe {
     public static boolean isWin(char[][] field, char sign) {
         for (int i = 0; i < field.length; i++) {
             if (field[i][0] == sign && field[i][1] == sign && field[i][2] == sign) return true;
-        }
-        for (int i = 0; i < field.length; i++) {
             if (field[0][i] == sign && field[1][i] == sign && field[2][i] == sign) return true;
         }
         if (field[0][0] == sign && field[1][1] == sign && field[2][2] == sign) return true;
         else if (field[2][0] == sign && field[1][1] == sign && field[0][2] == sign) return true;
         else return false;
-    }
-
-    public static void checkWin(char[][] field, char sign){
-        char[][] podeda1 = {{'X', 'X', 'X'}};
-        for (int i = 0; i < field.length; i++) {
-            if (field[i]==podeda1[i])
-        }
     }
 }
