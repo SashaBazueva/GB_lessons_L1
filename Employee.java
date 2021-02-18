@@ -15,37 +15,18 @@ public class Employee {
         this.age = age;
     }
 
-    public void outputInformation(String fio, String post, String email, String phoneNumber, int salary, int age) {
-        System.out.println(fio);
+    public void outputInformation() {
+        System.out.printf("%s", fio);
         System.out.println();
-        System.out.println("Возраст: " + age);
-        System.out.println("Должность: " + post + " (" + salary + " ₽)");
-        System.out.println("Эл. почта: " + email);
-        System.out.println("Контактный номер телефона: " + phoneNumber);//номер телефона для связи
+        System.out.printf("Возраст: %d%n", age);
+        System.out.printf("Должность: %s (%d ₽)%n", post, salary);
+        System.out.printf("Эл. почта: %s%n", email);
+        System.out.printf("Контактный номер телефона: %s%n", phoneNumber);//номер телефона для связи
     }
 
-    public int setAge() {
+
+    public int getAge() {
         return age;
-    }
-
-    public int setSalary() {
-        return salary;
-    }
-
-    public String setFio() {
-        return fio;
-    }
-
-    public String setPost() {
-        return post;
-    }
-
-    public String setEmail() {
-        return email;
-    }
-
-    public String setPhoneNumber() {
-        return phoneNumber;
     }
 }
 
