@@ -7,8 +7,8 @@ public class Main {
         emplArray[3] = new Employee("Алмазова Алина Антоновна", "танцор", "ledybagismylove@mail.ru", "11-202-10", 75000, 39);
         emplArray[4] = new Employee("Базуева Ирина Сергеевна", "художник", "lalalaa@mail.ru", "-", 75000, 35);
         for (int i = 0; i < emplArray.length; i++) {
-            if (emplArray[i].setAge()>40){
-                emplArray[i].outputInformation(emplArray[i].setFio(), emplArray[i].setPost(), emplArray[i].setEmail(), emplArray[i].setPhoneNumber(), emplArray[i].setSalary(), emplArray[i].setAge());
+            if (emplArray[i].getAge()>40){
+                emplArray[i].outputInformation();
                 System.out.println("--------");
             }
         }
