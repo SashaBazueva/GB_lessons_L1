@@ -1,9 +1,7 @@
 package base;
 
 public abstract class Animal {
-    protected int runLength;
-    protected int swimLength;
-    protected String name;
+    private String name;
 
     public Animal(String name) {
         this.name = name;
@@ -14,4 +12,7 @@ public abstract class Animal {
 
     public abstract void swim(int swimLength);
 
+    public String getName() {
+        return name;
+    }
 }
